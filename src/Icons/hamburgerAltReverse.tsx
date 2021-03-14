@@ -1,24 +1,25 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps } from './icon'
+import Icon, { IconProps, IconStyle } from './icon'
 
 const useStyles = createUseStyles({
     hamburgerAltReverse: {
+        ...IconStyle,
         width: '1em',
         height: '100%',
         '&:after,&:before': {
             top: '-.35em',
-            left: 0,
-            right: 'auto',
+            right: 0,
+            left: 'auto',
             width: '.5em',
             bottom: 'auto',
         },
         '&:before': {
-            top: 'auto',
-            left: 'auto',
-            right: 0,
-            bottom: '-.35em'
+            top: 'auto !important',
+            right: 'auto !important',
+            left: '0 !important',
+            bottom: '-.35em !important'
         }
     },
 })

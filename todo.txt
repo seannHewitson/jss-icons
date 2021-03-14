@@ -1,0 +1,1 @@
+Create a class builder function which generates classes in jss inside or used inside Icon based on the array of classes, last style overrides previous styles

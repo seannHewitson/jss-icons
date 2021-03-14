@@ -1,10 +1,11 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps } from './icon'
+import Icon, { IconProps, IconStyle } from './icon'
 
 const useStyles = createUseStyles({
     hamburger: {
+        ...IconStyle,
         width: '1em',
         height: '100%',
         '&:after,&:before': {
@@ -13,8 +14,8 @@ const useStyles = createUseStyles({
             bottom: 'auto',
         },
         '&:before': {
-            top: 'auto',
-            bottom: '-.35em'
+            top: 'auto !important',
+            bottom: '-.35em !important'
         }
     },
 })

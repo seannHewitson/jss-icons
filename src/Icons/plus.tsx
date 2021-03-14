@@ -4,10 +4,10 @@ import { createUseStyles } from 'react-jss'
 import Icon, { IconProps, IconStyle } from './icon'
 
 const useStyles = createUseStyles({
-    close: {
+    plus: {
         ...IconStyle,
         width: '1em',
-        transform: 'translate(-50%, -50%) rotate(-45deg) !important',
+        transform: 'translate(-50%, -50%)',
         height: '100%',
         '&:after,&:before': {
             top: '0',
@@ -26,18 +26,18 @@ const useStyles = createUseStyles({
     },
 })
 
-export const Close = (): string => {
+export const Plus = (): string => {
     const classes = useStyles();
 
-    return classes.close
+    return classes.plus
 }
 
-const CloseIcon = (props: IconProps): JSX.Element => {
+const PlusIcon = (props: IconProps): JSX.Element => {
     const classes = useStyles();
 
     return (
-        <Icon icon={`${classes.close}`} {...props} />
+        <Icon icon={`${classes.plus}`} {...props} />
     )
 }
 
-export default CloseIcon
+export default PlusIcon

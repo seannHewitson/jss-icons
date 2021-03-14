@@ -4,6 +4,7 @@ import CloseIcon, { Close } from './close'
 import HamburgerIcon, { Hamburger } from './hamburger'
 import HamburgerAltIcon, { HamburgerAlt } from './hamburgerAlt'
 import HamburgerAltReverseIcon, { HamburgerAltReverse } from './hamburgerAltReverse'
+import PlusIcon, { Plus } from './plus'
 
 export {
     Icon,
@@ -17,4 +18,6 @@ export {
     HamburgerAltIcon,
     HamburgerAltReverse,
     HamburgerAltReverseIcon,
+    Plus,
+    PlusIcon
 }
