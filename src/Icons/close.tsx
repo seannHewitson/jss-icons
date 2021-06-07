@@ -1,11 +1,10 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps, IconStyle } from './icon'
+import Icon, { IconProps } from './icon'
 
 const useStyles = createUseStyles({
     close: {
-        ...IconStyle,
         width: '1em',
         transform: 'translate(-50%, -50%) rotate(-45deg) !important',
         height: '100%',
@@ -15,7 +14,7 @@ const useStyles = createUseStyles({
             bottom: 'auto',
             width: '.5em',
             transformOrigin: 'right',
-            transform: 'rotate(90deg)'
+            transform: 'rotate(90deg) !important'
         },
         '&:before': {
             top: 'auto !important',

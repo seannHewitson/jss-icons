@@ -1,10 +1,10 @@
 {
   "name": "jss-icons",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Expansion of Pure css icons module using JSS & TypeScript",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "jsnext:main": "build/index.es.js",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
+  "jsnext:main": "lib/index.es.js",
   "scripts": {
     "lint": "standard",
     "build": "rollup -c",
@@ -13,7 +13,7 @@
     "format": "prettier-standard --format"
   },
   "files": [
-    "build"
+    "lib"
   ],
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
   "homepage": "https://github.com/seannHewitson/jss-icons#readme",
   "devDependencies": {
     "@babel/core": "^7.13.10",
-    "@storybook/react": "^6.1.21",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
@@ -51,13 +50,13 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "testPathIgnorePatterns": [
-      "build/"
+      "lib/"
     ]
   },
   "standard": {
     "ignore": [
       "node_modules/",
-      "build/"
+      "lib/"
     ]
   },
   "globals": [
@@ -73,6 +72,7 @@
     "react-dom": "^17.0.1"
   },
   "dependencies": {
+    "@storybook/react": "^6.1.21",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }

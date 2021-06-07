@@ -1,11 +1,10 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps, IconStyle } from './icon'
+import Icon, { IconProps } from './icon'
 
 const useStyles = createUseStyles({
     hamburgerAlt: {
-        ...IconStyle,
         width: '1em',
         height: '100%',
         '&:after,&:before': {

@@ -1,11 +1,10 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps, IconStyle } from './icon'
+import Icon, { IconProps } from './icon'
 
 const useStyles = createUseStyles({
     beehive: {
-        ...IconStyle,
         width: '1em',
         height: '100%',
         '&:after,&:before': {
@@ -25,7 +24,6 @@ const useStyles = createUseStyles({
 
 export const Beehive = (): string => {
     const classes = useStyles();
-
     return classes.beehive
 }
 

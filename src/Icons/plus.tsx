@@ -1,11 +1,10 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
 
-import Icon, { IconProps, IconStyle } from './icon'
+import Icon, { IconProps } from './icon'
 
 const useStyles = createUseStyles({
     plus: {
-        ...IconStyle,
         width: '1em',
         transform: 'translate(-50%, -50%)',
         height: '100%',
@@ -28,7 +27,6 @@ const useStyles = createUseStyles({
 
 export const Plus = (): string => {
     const classes = useStyles();
-
     return classes.plus
 }
 
